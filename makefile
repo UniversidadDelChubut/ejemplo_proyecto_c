@@ -1,6 +1,6 @@
 # makefile de ejemplo
 principal:		main ventas informe
-				gcc -o principal main.o modulo_ventas.o modulo_informe.o funciones_comunes.o
+				gcc -o main main.o modulo_ventas.o modulo_informe.o funciones_comunes.o
 
 main:			main.c
 				gcc -c main.c
@@ -14,4 +14,4 @@ informe:		modulo_informe.c modulo_informe.h funciones
 funciones:		funciones_comunes.c funciones_comunes.h
 				gcc -c funciones_comunes.c
 clean:			
-				rm -f principal *.o
+				rm -f main *.o
